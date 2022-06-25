@@ -17,73 +17,87 @@
 
     <body>
         <!-- titlebar -->
-        <div class="row px-4 pt-4 pb-2">
-            <div class="container">
-                <div class="row">
+        <div class="container-fluid bg-mid">
+            <!-- <div class="container"> -->
+                <div class="row px-3 pt-4 pb-2">
                     <div class="d-flex flex-row flex-wrap justify-content-between">
-                        <div class="col-12 col-md-8 d-flex">
-                            <div class="placeholder col-1 dkblue op100"></div>
-                            <div class="bg-light op70 pl-2 pr-4 w-auto">
-                                <div class="col fs-2 bg-light op70 mx-4" href="{% url 'home' %}">
+                        <div class="col col-md-8 col-xl-5 d-flex mw-100 flex-nowrap">
+                            <div class="col-1 placeholder dkblue op100"></div>
+                            <div class="col-auto bg-light op70 pl-2 pr-4">
+                                <div class="fs-2 bg-light op70 mx-4" href="{% url 'home' %}">
                                     STARFIELD STARLOG
                                 </div>
                             </div>
-                            <div class="placeholder col-2 op30"></div>
+                            <div class="col placeholder op30 bg-light"></div>
                         </div>
-                        
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
-        <header class="masthead px-4 pt-0 pb-3">
-            <div class="container-fluid py-0 my-0">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row mastbordertop">
-                            <div class="col-md-8 d-flex p-0 m-0">
-                                <h3 class="text-light bgdkblue py-1 px-4 adtlheadingstyle"> 
-                                    WELCOME STARFIELD EXPLORERS
-                                </h3>
-                            </div>
-                            <nav class="navbar navbar-expand-lg navbarstyle col-12" id="mainNav">
-                                <div class="container-fluid d-flex justify-content-between col-8">
-                                    <button class="navbar-toggler navbar-toggler-left text-light dkblue" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                                        MENU <i class="fa-solid fa-meteor"></i>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item active">
-                                                <a class="nav-link navbtnsurround" href="#">Home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link navbtnsurround" href="#">POLICY</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link navbtnsurround" href="#">ACCOUNT</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-auto d-flex fs-4 justify-content-end">
-                                    <span class="my-auto">Account <i class="fa-solid fa-user-astronaut"></i></span>
-                                </div>
-                            </nav>
+        <header class="container-fluid masthead bg-mid">
+            <div class="row px-3 pt-0 pb-1 my-0">
+                <div class="col-12">
+                    <div class="row ">
+                        <div class="col-12 d-flex flex-nowrap py-0">
+                            <div class="dkbordertop w-100">
+                            <h3 class="col-auto col-md-8 col-xl-5 text-light bgdkblue py-1 px-5 maxw "> 
+                                WELCOME STARFIELD EXPLORERS
+                            </h3>
                         </div>
+                        </div>
+                        <nav class="navbar navbar-expand-lg" id="mainNav">
+                            <div class="col container-fluid d-flex justify-content-between">
+                                <button 
+                                    class="btn fs-4 col-auto navbar-toggler navbar-toggler-left px-2 py-2" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#navbarResponsive"
+                                    aria-controls="navbarResponsive" 
+                                    aria-expanded="false" 
+                                    aria-label="Toggle navigation"
+                                    >
+                                    MENU 
+                                    <i class="fa-solid fa-meteor"></i>
+                                </button>
+                                <div class="collapse navbar-collapse mt-2" id="navbarResponsive">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active">
+                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">POLICY</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">ACCOUNT</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button href="{% url 'home' %}" class="btn col-auto fs-4 justify-content-end px-2 py-1 m-0">
+                                <span class="my-auto">
+                                    My Account 
+                                    <i class="fa-solid fa-user-astronaut"></i>
+                                </span>
+                            </button>
+                        </nav>
                     </div>
                 </div>
             </div>
         </header>
 
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
+        <!-- <div class="mb-auto"> -->
+            {% block content %}
+            <!-- Content Goes here -->
+            {% endblock content %}
+        <!-- </div> -->
         
         <!-- Footer -->
-        <footer class="py-3 footerstyle">
-            <p class="m-0 text-dark text-center ">Copyright &copy; Emptydub Productions</p>
-        </footer>
+        <div>
+            <footer class="py-3 footerstyle w-100 bottom-0 dkbordertop">
+                <div class="dkblue text-center">Copyright &copy; Emptydub Productions</div>
+            </footer>
+        </div>
 
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
