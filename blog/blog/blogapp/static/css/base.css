@@ -2,7 +2,7 @@
 html {
     /* overflow-x: hidden; */
     /* height: 100vh; */
-    background: linear-gradient(rgba(178,191,183,1), rgba(138,149,143,1));
+    background: linear-gradient(rgba(178,191,183,0.5), rgba(138,149,143,1));
 }
 body {
     font-family: "Inconsolata", monospace;
@@ -11,7 +11,7 @@ body {
     color: #233a45;
     overflow-x: hidden;
     font-size: 18px;
-    background: linear-gradient(rgba(178,191,183,1), rgba(138,149,143,1));
+    background: linear-gradient(rgba(178,191,183,0.4), rgba(138,149,143,1));
     background-repeat: no-repeat;
 }
 a:link { color: #233a45; }
@@ -21,12 +21,13 @@ a:active { color: #233a45; }
 
 /* Utility */
 .tester {
-    /* height: 100%;
-    background-color: pink; */
     border: 1px solid red;
 }
+.bg-titlebar {
+    background: linear-gradient(rgba(156,169,159,1), rgba(138,149,143,.5));
+}
 .bg-mid {
-    background: rgba(138,149,143,1);
+    background: #9ca99f;
 }
 .shadow {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
@@ -84,7 +85,7 @@ a:active { color: #233a45; }
 
 /* footer */
 .footerstyle {
-    background: linear-gradient(rgba(108, 117, 115), rgba(99, 109, 106));
+    background: radial-gradient(rgba(108, 117, 115, 0.5), rgba(99, 109, 106));
     color:#233a45;
 }
 
@@ -132,4 +133,15 @@ a:active { color: #233a45; }
     background-color: #233b45;
     color: white;
     border: none;
+}
+
+
+/* Images */
+.imagestyles {
+    height: 50px;
+    position: absolute;
+    right: 24px;
+    /* transform-origin: bottom; */
+    transform: translateY(-50px);
+    /* bottom: 50px; */
 }

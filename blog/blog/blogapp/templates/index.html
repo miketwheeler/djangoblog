@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container d-flex min-vh-100">
+    <div class="container d-flex">
         <div class="row mt-4 mb-5">
             {% block leftsidebar %}
                 {% include 'leftsidebar.html' %} 
@@ -9,7 +9,7 @@
             <div class="col-md-6 mt-1 left">
                 <h4 class="dkblue fs-3">Posts</h4>
                 {% for post in post_list %}
-                    <div class="card mb-4 bordernone">
+                    <div class="card mb-3 bordernone">
                         <div class="bgdkgreen m-0 .dkgreenborder ">
                             <h5 class="text-light mx-2 my-1">
                                 {{ post.title }}
