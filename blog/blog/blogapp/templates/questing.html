@@ -2,11 +2,12 @@
 {% block content %}
     <div class="container d-flex">
         <div class="row mt-4 mb-5">
-            {% block leftsidebar %}
+            <h3>Questing</h3>
+            <!-- {% block leftsidebar %}
                 {% include 'leftsidebar.html' %} 
             {% endblock leftsidebar %}
             <!-- Blog Entries Column -->
-            <div class="col-md-6 mt-1 left">
+            <!-- <div class="col-md-6 mt-1 left">
                 <h4 class="dkblue fs-3">Posts</h4>
                 {% for post in post_list %}
                     <div class="card mb-3 bordernone">
@@ -17,15 +18,15 @@
                         </div>
                         <div class="card-body cardstyles">
                             <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on }} </p>
-                            <p class="card-text">{{ post.content|slice:":200" }}</p>
+                            <p class="card-text">{{post.content|slice:":200" }}</p>
                             <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                         </div>
-                    </div>
-                {% endfor %}
+                    </div> -->
+                <!-- {% endfor %}
             </div>
             {% block rightsidebar %} 
                 {% include 'rightsidebar.html' %} 
-            {% endblock rightsidebar %}
+            {% endblock rightsidebar %} --> -->
         </div>
     </div>
 {% endblock content %}

@@ -21,8 +21,8 @@
             <!-- <div class="container"> -->
                 <div class="row px-3 pt-4 pb-2">
                     <div class="d-flex flex-row flex-wrap justify-content-between">
-                        <div class="col-12 col-md-8 col-xl-5 d-flex flex-nowrap maxw">
-                            <div class="col-1 placeholder dkblue op100"></div>
+                        <div class="col-12 col-sm-8 col-xl-5 d-flex flex-nowrap maxw">
+                            <div class="col-1 placeholder dkblue op100 smmaxw"></div>
                             <div class="col-auto bg-light op70 pl-2 pr-4">
                                 <div class="fs-2 bg-light op70 mx-4" href="{% url 'home' %}">
                                     STARFIELD STARLOG
@@ -30,7 +30,6 @@
                             </div>
                             <div class="col placeholder op30 bg-light"></div>
                         </div>
-                        <!-- *** -->
                     </div>
                 </div>
             <!-- </div> -->
@@ -42,8 +41,8 @@
                     <div class="row ">
                         <div class="col-12 d-flex flex-nowrap py-0">
                             <div class="dkbordertop w-100">
-                            <img src="{% static 'images/sl-logo2.png' %}" class="d-none d-md-flex imagestyles" />
-                            <h3 class="col-auto col-md-8 col-xl-5 text-light bgdkblue py-1 px-5 maxw "> 
+                            <img src="{% static 'images/sl-logo.png' %}" class="d-none d-sm-flex imagestyles" />
+                            <h3 class="col-auto col-sm-8 col-xl-5 text-light bgdkblue py-1 px-md-5 px-1 maxw"> 
                                 WELCOME STARFIELD EXPLORERS
                             </h3>
                         </div>
@@ -68,17 +67,20 @@
                                             <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">POLICY</a>
+                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="{% url 'questing' %}">Questing</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">ACCOUNT</a>
+                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">Places</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link thinbuttonborder px-5 me-5 py-0" href="#">Items</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <button href="{% url 'home' %}" class="btn col-auto fs-4 justify-content-end px-2 py-1 m-0">
                                 <span class="my-auto">
-                                    My Account 
+                                    Account 
                                     <i class="fa-solid fa-user-astronaut"></i>
                                 </span>
                             </button>
@@ -96,8 +98,12 @@
         
         <!-- Footer -->
         <div>
-            <footer class="py-3 footerstyle w-100 bottom-0 dkbordertop">
-                <div class="dkblue text-center">Copyright &copy; Emptydub Productions</div>
+            <footer class="container-fluid px-4 footerstyle">
+                <div class="row py-3 dkbordertop">
+                    <div class="col-12 dkblue text-center">
+                        Copyright &copy; Emptydub Productions
+                    </div>
+                </div>
             </footer>
         </div>
 
